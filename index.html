@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Algorithm</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p class = 'patriot'></p>
+        <div class="selectModeContainer">
+        </br>
+            <input checked type="radio" class="selectMode encriptionMode" name="mode"><span>Шифрування</span>
+            <br>
+            <input type="radio" class="selectMode decodingMode" name="mode"><span>Розшифрування</span>
+        </div>
+        <div class="encriptionContainer mainContainer">
+            <p class="openTextEncription">Повідомлення для шифрування</p>
+            <input class="openText" placeholder="Введіть текст"><br>
+            <button class="startEncriptionButton">Start Encription</button>
+            <p class="encriptedText"></p>
+            <p class="encriptionKey"></p>
+        </div>
+        <div class="decodingContainer mainContainer hideMode">
+            <p class="openTextDecoding">Повідомлення для розшифрування</p>
+            <input class="encriptionText" placeholder="Введіть зашифроване повідомлення!"> <br>
+            <input class="key" placeholder="Введіть ключ!"> <br>
+            <button class="startDecodingButton">Start Decoding</button>
+            <p class="decodingText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
